@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="themes/default/default.css" />
+		<script charset="utf-8" src="js/kindeditor-all-min.js"></script>
+		<script charset="utf-8" src="lang/zh-CN.js"></script>
+	</head>
+
+	<script type="text/javascript">
+		var editor;
+		KindEditor.ready(function(K) {
+			editor = K.create('textarea[name="content"]', {
+					allowFileManager : true
+			});
+		});
+	</script>
+	<body>
+		<div class="container" style="width: 80%;">
+
+			<!--描述：上浮导航   -->
+			<div class="row clearfix" style="height: 50px;">
+				<div class="col-md-12 column">
+					<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+							<a class="navbar-brand" href="#" style="margin-right: 10px;">
+								<font size="6">Pluto'</font>
+							</a>
+						</div>
+
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+								<li>
+									<a href="#">日志</a>
+								</li>
+								<li>
+									<a href="#">摄影</a>
+								</li>
+								<li>
+									<a href="#">文件</a>
+								</li>
+							</ul>
+
+							<ul class="nav navbar-nav navbar-right">
+
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
+									<ul class="dropdown-menu">
+										<li>
+											<a href="#">Action</a>
+										</li>
+										<li>
+											<a href="#">Another action</a>
+										</li>
+										<li>
+											<a href="#">Something else here</a>
+										</li>
+										<li class="divider">
+										</li>
+										<li>
+											<a href="#">Separated link</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+
+					</nav>
+				</div>
+			</div>
+
+			<div class="row clearfix">
+				<div class="col-md-12 column" style="margin-top: 10px;">
+					<form>
+						<input type="text" class="form-control" style="margin: 10px auto;text-align: center;"/>
+						<textarea name="content" style="width:100%;height:400px;visibility:hidden;">KindEditor</textarea>
+						<input type="button" class="btn btn-info" value="submit" style="float: right;margin: 10px;"/>
+						<input type="button" class="btn btn-default" value="clear" style="float: right;margin: 10px;" />
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<!-- 底部联系方式 -->
+		<div class="row clearfix" style="height: 200px;text-align: center;margin-top: 50px;">
+			<div style="width: 100%;">
+				<h3>联系作者</h3>
+			</div>
+			<div class="table-responsive">
+				<table class="table">
+					<tr>
+						<td>QQ</td>
+						<td>Email</td>
+						<td>手机&微信</td>
+						<td>地址</td>
+					</tr>
+					<tr>
+						<td>1464697820</td>
+						<td>1464697820@qq.com</td>
+						<td>15232321081</td>
+						<td>河北省秦皇岛市燕山大学西校区</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div style="height: 300px;padding-top:50px ;">
+			<img class="img-responsive center-block" width="100px" src="img/head.png" />
+		</div>
+	</body>
+
+</html>
